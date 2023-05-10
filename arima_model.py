@@ -26,7 +26,7 @@ plt.figure(figsize = (15,6))
 plt.plot(df, lw=5, color="r")
 plt.title("1st graph", fontsize = 20)
 plt.show()
-#Si tiene tendencia y 
+#Si tiene tendencia y es cíclico ya que se observan cambios repetitivos con una temporalidad amplia.
 
 result = adfuller(df.traffic.dropna())
 print('ADF Statistic %f' % result [0])
